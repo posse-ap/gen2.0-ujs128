@@ -1,0 +1,11 @@
+body{
+    background-color: lightcyan;
+}
+li{
+    list-style-type: circle;
+    margin: 10px;
+    color: red
+}
+a{
+    font-weight: bold;
+}
