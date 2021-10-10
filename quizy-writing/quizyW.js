@@ -19,7 +19,7 @@ function createhtml(){
             question[r]=tmp
         }
 
-        createquestion(questionNum,selectionList,validId);
+        createquestion(index+1,question,question.indexOf(answer)+1);
     })
 }
 
@@ -29,17 +29,31 @@ function createquestion(questionNum,selectionList,validId){
         + `     <img src="img/${questionNum}.png" > `
         + `     <ul>`
 
-    selectionList.forEach(function(select,index){
-        content +=`         <li>`
+    selectionList.forEach(function(select,index){                                             
+        content +=`         <li id=answerList_${questionNum}_${(index+1)} class=answerList name=answerList_${questionNum} onclick="check(${questionNum},${(index+1)},${validId})>${select}</li>"`
 
     })
     content +=`     </ul>`
         +`</div>`
         +`<div>`
         +`  <h2></h2>`
-        +`  <p>正解は「${selectionList[validId]}」です！</p>`
+        +`  <p>正解は「${selectionList[validId-1]}」です！</p>`
         +`</div>`
     document.getElementById('main').insertAdjacentHTML("beforeend",content)
+
+
+
+}
+function check(questionNum,selectionId,validId){
+    let answerList = document.getElementsByName('answerList_'+questionNum)
+    answerList.forEach(answerList=>{
+        answerList.style.pointerEvents='none'
+    })
+    let selecter=document.getElementById('answerList'+questionNum+'_'+selectionId)
+    let valider=document.getElementById('answerList'+questionNum+'_'+validId)
+
+    selecter.className=
+    
 
 
 
