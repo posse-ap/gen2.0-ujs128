@@ -1,0 +1,166 @@
+body{
+    background-color: rgb(241, 240, 240);
+    margin: 0;
+}
+.head_contents{
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    background-color: white;
+    align-items: center;
+}
+.head_contents div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+
+}
+.head_contents div img{
+
+   width: 33%;
+   height: 20%;
+   margin: 0 5% 0 15%;
+}
+.head_contents_week{
+    font-size: 1vw;
+    width: 35%;
+    margin: 0;
+    color: rgb(157, 196, 209);
+
+}
+.btn{
+    margin-right: 7%;
+    width: 14%;
+    height: 65%;
+    border-radius: 20px;
+    background: linear-gradient(to bottom right, rgb(11 95 206),rgb(0 255 226));
+    /* font-weight: bold; */
+    color: white;
+    border: none;
+    box-shadow: 4px 3px 9px rgb(63, 149, 248);
+}
+.boxes1{
+    border-radius: 10px;
+    box-shadow: 4px 3px 5px grey;
+    border: none;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.boxes2{
+    border-radius: 10px;
+    box-shadow: 4px 3px 5px grey;
+    border: none;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: 35vw;
+    font-size: 1vw;
+
+}
+.dataContents{
+    display: flex;
+    justify-content: center;
+    margin: 20px 7%;
+}
+.dataContents_left{
+    width: 50%;
+}
+.dataContents_left_studyHour{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.dataContents_left_studyHour div{
+    width: 50%;
+    height: 9vw;
+    margin-right: 20px;
+
+}
+.dataContents_left_studyHour_title{
+    font-size: 1vw;
+    font-weight: bold;
+    color: rgb(44, 92, 248);
+}
+.dataContents_left_studyHour_num{
+    font-size: 2vw;
+    font-weight: bold;
+}
+.dataContents_left_studyHour_hour{
+    font-size: 1.2vw;
+    color: rgb(133, 166, 255);
+}
+.dataContents_left_graph{
+    margin: 20px;
+    margin-left: 0;
+    height: 27vw;
+
+    background-image: url(./imgs/barChart.jpg);
+    background-size: cover;
+}
+.dataContents_right{
+    display: flex;
+    width: 50%;
+}
+
+.dataContents_right_lang{
+    margin-right: 20px;
+    width: 50%;
+    
+}
+.dataContents_right_lang_img{
+    text-align: center;
+}
+.dataContents_right_contents{
+    
+    width: 50%;
+}
+.dataContents_right_img{
+    width: 100%;
+}
+.checkTime{
+    display: flex;
+    justify-content: center;
+}
+.fas{
+    color: rgb(98, 151, 248);
+    margin:0 1%;
+}
+
+.Modal{
+    margin: 10%;
+    width: 900px;
+    background-color: white;
+    border-radius: 20px;
+}
+.Modal_contents{
+    display: flex;
+    margin: 56px;
+}
+h5{
+    margin-bottom: 1px;
+}
+.Modal_contents_left{
+    width: 50%;
+}
+.Modal_contents_left_content{
+    display: flex;
+    flex-wrap: wrap;
+}
+.Modal_contents_left_content span{
+    background-color: rgb(228, 227, 227);
+    border-radius: 10px;
+    margin-left: 2%;
+    margin-top: 1%;
+}
+
+
+.Modal_contents_right{
+    width: 50%;
+}
+
+

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOP画面</title>
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="top.css">
+</head>
+
+<body>
+    <header class="head_contents">
+        <div>
+            <img src="imgs/posseLogo.png" alt="ロゴの写真">
+            <h1 class="head_contents_week">4th week</h1>
+        </div>
+        <button class="btn">
+            記録・投稿
+        </button>
+    </header>
+    <div class=dataContents>
+        <div class="dataContents_left">
+            <div class="dataContents_left_studyHour">
+                <div class="boxes1">
+                    <h3 class="dataContents_left_studyHour_title">Today</h3>
+                    <span class="dataContents_left_studyHour_num">3</span>
+                    <span class="dataContents_left_studyHour_hour">hour</span>
+                </div>
+                <div class="boxes1">
+                    <h3 class="dataContents_left_studyHour_title">Month</h3>
+                    <span class="dataContents_left_studyHour_num">120</span>
+                    <span class="dataContents_left_studyHour_hour">hour</span>
+                </div>
+                <div class="boxes1">
+                    <h3 class="dataContents_left_studyHour_title">Total</h3>
+                    <span class="dataContents_left_studyHour_num">1348</span>
+                    <span class="dataContents_left_studyHour_hour">hour</span>
+                </div>
+            </div>
+            <div class="dataContents_left_graph boxes1">
+                
+                <!-- <canvas id=myBarChart></canvas> -->
+                <!-- <script>
+                    const ctx = document.getElementById('studyLog');
+
+                    let myBarChart = new Chart(ctx, {
+                        type: 'bar',
+                        data: {
+                            labels: ['2', '4', '6', '8', '10', '12', '14', '16', '18', '20', '22', '24', '26', '28', '30'],
+                            datasets: [
+                                {
+                                    data: [2, 4, 5, 3, 5, 6, 2, 1, 5, 7, 4, 2, 4, 3, 2, 8, 6, 4, 5, 1, 4, 6, 8, 3, 5, 3, 5, 3, 4, 7, 2],
+                                    backgroundColor: 'blue'
+                                }
+                            ]
+                        },
+                        options: {
+                            scales: {
+                                yAxes: [{
+                                    ticks: {
+                                        suggestedMax: 8,
+                                        suggestedMin: 0,
+                                        stepSize: 2,
+                                        callback: function (value, index, values) {
+                                            return value + '人'
+                                        }
+                                    }
+                                }]
+                            },
+                        }
+                    });
+                </script> -->
+
+            </div>
+        </div>
+        <div class="dataContents_right">
+            
+            <div class="dataContents_right_lang boxes2">
+
+                <h2 class="dataContents_right_title">学習言語</h2>
+                <img src="imgs/studyingLang.jpg" alt="言語学習" class="dataContents_right_img">
+            </div>
+            <div class="dataContents_right_contents boxes2">
+                <h2 class="dataContents_right_title">学習コンテンツ</h2>
+                <img src="imgs/studyingContent.jpg" alt="学習コンテンツ" class="dataContents_right_img">
+
+                
+            </div>
+
+        </div>
+
+
+    </div>
+    <div class="checkTime">
+        <i class="fas fa-chevron-left"></i>
+        <span>2020年 10月</span>
+        <i class="fas fa-chevron-right"></i>
+
+    </div>
+
+    <div class="Modal">
+        <div class="Modal_contents">
+            <div class="Modal_contents_left">
+                <h5>学習日</h5>
+                <p>2020年10月27日</p>
+                <h5>学習コンテンツ（複数選択可）</h5>
+                <div class="Modal_contents_left_content">
+                    <span>N予備校</span>
+                    <span>ドットインストール</span>
+                    <span>POSSE課題</span>
+                </div>
+                <h5>学習言語（複数選択可）</h5>
+                <div class="Modal_contents_left_content">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>PHP</span>
+                    <span>Laravel</span>
+                    <span>SQL</span>
+                    <span>SHELL</span>
+                    <span>情報システム基礎知識（その他）</span>
+                </div>
+            </div>
+            <div class="Modal_contents_right">
+                <h5>学習時間</h5>
+                <input type="text" class="i">
+                <h5>Twitter用コメント</h5>
+                <input type="text">
+                <p>Twitterに自動投稿する</p>
+            </div>
+            
+        </div>
+        <button class="btn">
+            記録・投稿
+        </button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+
+    <script src="top.js"></script>
+</body>
+
+</html>
