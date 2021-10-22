@@ -1,4 +1,4 @@
-// 'use strict'
+'use strict'
 // let ctx = document.getElementById('studyLog');
 
 // let myBarChart = new Chart(ctx, {
@@ -27,3 +27,17 @@
 //         },
 //     }
 // });
+const ModalOpen=document.getElementById('btn');
+const ModalClose=document.getElementById('closeBtn');
+
+ModalOpen.addEventListener('click',ModalAppear)
+ModalClose.addEventListener('click',ModalDisappear)
+
+function ModalAppear(){
+    const ModalPage=document.getElementById('Modalpage')
+    ModalPage.classList.add('appear')
+}
+function ModalDisappear(){
+    const ModalPage=document.getElementById('Modalpage')
+    ModalPage.classList.remove('appear')
+}

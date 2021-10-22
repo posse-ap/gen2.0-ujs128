@@ -2,6 +2,9 @@ body{
     background-color: rgb(241, 240, 240);
     margin: 0;
 }
+.webapp{
+    position: relative;
+}
 .head_contents{
     display: flex;
     justify-content: space-between;
@@ -132,10 +135,20 @@ body{
 }
 
 .Modal{
+    position: absolute;
+    display: flex;
+    display: none;
+    flex-direction: column;
+    align-items: center;
     margin: 10%;
     width: 900px;
     background-color: white;
     border-radius: 20px;
+    top: 35;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
 }
 .Modal_contents{
     display: flex;
@@ -147,20 +160,79 @@ h5{
 .Modal_contents_left{
     width: 50%;
 }
-.Modal_contents_left_content{
+.Modal_contents_left p{
     display: flex;
-    flex-wrap: wrap;
-}
-.Modal_contents_left_content span{
-    background-color: rgb(228, 227, 227);
+    align-items: center;
+    padding: 1% 2%;
+    background-color: rgb(241, 241, 241);
     border-radius: 10px;
     margin-left: 2%;
     margin-top: 1%;
+    height: 10%;
+    margin-right: 40px;
 }
+.Modal_contents_left_content{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 20%;
+}
+.Modal_contents_left_content div{
+    display: flex;
+    align-items: center;
+    padding: 1% 2%;
+    background-color: rgb(241, 241, 241);
+    border-radius: 20px;
+    margin-left: 2%;
+    margin-top: 3%;
+    height: 10%;
+}
+.Modal_contents_left_content div span{
+    white-space: nowrap;
+}
+.Modal_contents_left_content div i{
+    color: rgb(177, 177, 177);
 
+}
 
 .Modal_contents_right{
     width: 50%;
+    position: relative;
 }
-
-
+.fa-times-circle{
+    position: absolute;
+    color: #ececec;
+    top: -10%;
+    right: -10%;
+    font-size: 2.5vw;
+}
+.Modal_contents_right input{
+    border: none;
+    padding: 1% 2%;
+    background-color: rgb(241, 241, 241);
+    border-radius: 10px;
+    margin-left: 2%;
+    margin-top: 1%;
+    width: 100%;
+}
+.timeBox{
+    height: 10%;
+}
+.twiBox{
+    height: 60%;
+}
+.Modal_contents_right div{
+    display: flex;
+    align-items: center;
+}
+.Modal_contents_right div i{
+    font-size: 150%;
+}
+.Modal button{
+    width: 40%;
+    height: 3vw;
+    margin-bottom: 4%;
+    font-size: 1.5vw;
+}
+.appear{
+    display: flex;
+}
