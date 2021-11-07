@@ -51,16 +51,75 @@
                 <div class="dataContents_right_lang boxes2">
             
                     <h2 class="dataContents_right_title">学習言語</h2>
-                    <div id="chart_pie" class="chartPie"></div>
+                    <div id="chart_pie" class="chartPie" style="width: 100%"></div>
+                    <div class='dataContents_right_colorName'>
+
+                        <div>
+                            <div class="color1"></div>
+                            <span>HTML</span>
+                        </div>
+                        <div>
+                            <div class="color2"></div>
+                            <span>CSS</span>
+                            
+                        </div>
+                        <div>
+                            <div class="color3"></div>
+                            <span>JavaScript</span>
+    
+                        </div>
+                        <div>
+                            <div class="color4"></div>
+                            <span>PHP</span>
+                            
+                        </div>
+                        <div>
+                            <div class="color5"></div>
+                            <span>Laravel</span>
+                            
+                        </div>
+                        <div>
+                            <div class="color6"></div>
+                            <span>SQL</span>
+                            
+                        </div>
+                        <div>
+                            <div class="color7"></div>
+                            <span>SHELL</span>
+                            
+                        </div>
+                        <div>
+                            <div class="color8"></div>
+                            <span>情報システム基礎知識（その他）</span>
+                            
+                        </div>
+                    </div>
                 </div>
                 <div class="dataContents_right_contents boxes2">
                     <h2 class="dataContents_right_title">学習コンテンツ</h2>
-                    <div id="chart_pie2" class="chartPie2"></div>
-            
-            
-            
+                    <div id="chart_pie2" class="chartPie2" style="width: 100%"></div>
+                    <div class="dataContents_right_colorName">
+                        <div>
+                            <div class="color1"></div>
+                            <span>N予備校</span>
+                        </div>
+                        <div>
+                            <div class="color2"></div>
+                            <span>ドットインストール</span>
+                            
+                        </div>
+                        <div>
+                            <div class="color3"></div>
+                            <span>POSSE課題</span>
+        
+                        </div>
+
+                    </div>
+                    
+                    
+                    
                 </div>
-            
+                
             </div>
             
 
@@ -76,81 +135,74 @@
         <button id='btn2' class="btn toggleAppear" >
             記録・投稿
         </button>
-        
         <div class="Modal" id="Modalpage">
             <div class="Modal_contents">
                 <i class="fas fa-times-circle" id="closeBtn"></i>
                 <div class="Modal_contents_left">
                     <h5>学習日</h5>
-                    <p>2020年10月27日</p>
+                    <input type="date" >
                     <h5>学習コンテンツ（複数選択可）</h5>
                     <div class="Modal_contents_left_content">
-                        <div>
-                            <i class="fas fa-check-circle"></i>
-                            <span>N予備校</span>
-                        </div>
-                        <div>
-                            <i class="fas fa-check-circle"></i>
-                            <span>ドットインストール</span>
-                        </div>
-                        <div>
-                            <i class="fas fa-check-circle"></i>
-                            <span>POSSE課題</span>
-                        </div>
+                        <span>
+                            <label for="check1" class="menu"><i class="fas fa-check-circle"></i>N予備校</label>
+                            <input id='check1' type="checkbox" value="N予備校">
+                        </span>
+                        <span>
+                            <label for='check2' class="menu"><i class="fas fa-check-circle"></i>ドットインストール</label>
+                            <input id='check2' type="checkbox" value="ドットインストール">
+                        </span>
+                        <span>
+                            <label for='check3' class="menu"><i class="fas fa-check-circle"></i>POSSE課題</label>
+                            <input id='check3' type="checkbox" value="POSSE課題">
+                        </span>
                     </div>
                     <h5>学習言語（複数選択可）</h5>
-                    <div class="Modal_contents_left_content">
-                        <div>
-                            <i class="fas fa-check-circle"></i>
-                            <span>HTML</span>
-    
-                        </div>
-                        <div>
-                            <i class="fas fa-check-circle"></i>
-                            <span>CSS</span>
-    
-                        </div>
-                        <div>
-                            <i class="fas fa-check-circle"></i>
-                            <span>JavaScript</span>
-    
-                        </div>
-                        <div>
-                            <i class="fas fa-check-circle"></i>
-                            <span>PHP</span>
-    
-                        </div>
-                        <div>
-                            <i class="fas fa-check-circle"></i>
-                            <span>Laravel</span>
-    
-                        </div>
-                        <div>
-                            <i class="fas fa-check-circle"></i>
-                            <span>SQL</span>
-                            
-                        </div>
-                        <div>
-                            <i class="fas fa-check-circle"></i>
-                            <span>SHELL</span>
-                            
-                        </div>
-                        <div >
-                            <i class="fas fa-check-circle"></i>
-                            <span>情報システム基礎知識（その他）</span>
-                            
-                        </div>
+                    <div id="studyLang" class="Modal_contents_left_content">
+                        <span>
+                            <label for='check4' class="menu"><i class="fas fa-check-circle" ></i>HTML</label>
+                            <input id='check4' type="checkbox" value="HTML">
+                        </span>
+                        <span>
+                            <label for='check5' class="menu"><i class="fas fa-check-circle"></i>CSS</label>
+                            <input id='check5' type="checkbox" value="CSS">
+                        </span>
+                        <span>
+                            <label for='check6' class="menu"><i class="fas fa-check-circle"></i>JavaScript</label>
+                            <input id='check6' type="checkbox" value="JavaScript">
+                        </span>
+                        <span>
+                            <label for='check7' class="menu"><i class="fas fa-check-circle"></i>PHP</label>
+                            <input id='check7' type="checkbox" value="PHP">
+                        </span>
+                        <span>
+                            <label for='check8' class="menu"><i class="fas fa-check-circle"></i>Laravel</label>
+                            <input id='check8' type="checkbox" value="Laravel">
+                        </span>
+                        <span>
+                            <label for='check9' class="menu"><i class="fas fa-check-circle"></i>SQL</label>
+                            <input id='check9' type="checkbox" value="SQL">
+                        </span>
+                        <span>
+                            <label for='check10' class="menu"><i class="fas fa-check-circle"></i>SHELL</label>
+                            <input id='check10' type="checkbox" value="SHELL">
+                        </span>
+
+                        <span>
+                            <label for='check11' class="menu"><i class="fas fa-check-circle"></i>情報システム基礎知識（その他）</label>
+                            <input id='check11' type="checkbox" value="情報システム基礎知識（その他）">
+                        </span>
+
                     </div>
                 </div>
                 <div class="Modal_contents_right">
                     <h5>学習時間</h5>
                     <input type="text" class="timeBox">
                     <h5>Twitter用コメント</h5>
-                    <input type="text" class="twiBox">
+                    <textarea name="" id="" cols="30" rows="10"class="twiBox"></textarea>
                     <div class="postBtn">
                         <i class="fas fa-check-circle"></i>
                         <p>Twitterに自動投稿する</p>
-    
+                        
                     </div>
                 </div>
                 
@@ -159,9 +211,10 @@
                 記録・投稿
             </button>
         </div>
-
-
+        
+        
     </div>
+    <div id="backBlack"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
     
     <script src="top.js"></script>
