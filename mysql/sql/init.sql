@@ -41,7 +41,7 @@ CREATE TABLE choices
   id INT(10),
   questions_id INT(10),
   name VARCHAR(40),
-  valid INT(10),
+  valid INT(10)
 );
 
 INSERT INTO choices (id, questions_id, name, valid) VALUES (1, 1, "たかなわ", 1);
